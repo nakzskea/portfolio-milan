@@ -198,9 +198,9 @@ export const dico = {
     faits: [
       { cle: "Based in", valeur: "Metz, open to Luxembourg" },
       { cle: "Currently", valeur: "Apprentice at LE MET' since 2025" },
-      { cle: "Studying", valeur: "Application designer & developer degree", lien: "https://www.francecompetences.fr/recherche/rncp/37873/"},
+      { cle: "Studying", valeur: "RNCP 6 - Application designer & developer degree", lien: "https://www.francecompetences.fr/recherche/rncp/37873/"},
     ],
-    competencesTitre: "What I do",
+    competencesTitre: "What I can do",
     arrets: [
       {
         titre: "Web development",
@@ -297,7 +297,7 @@ export const dico = {
     ],
     projetsTitre: "Projects",
     projetsChapo:
-      "Applications in production, used every day by real teams. The source of company projects is not public, so here is what I did and how.",
+      "Applications in production used every day by real teams, or personnal projects. The source of company projects is not public, so here is what I did and how.",
     labels: {
       role: "My part",
       stack: "Technologies",
