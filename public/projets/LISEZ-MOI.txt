@@ -1,0 +1,3 @@
+Ici les captures des projets, en .png ou .jpg, format paysage (idéalement 1200x750).
+Le nom du fichier doit correspondre au champ "visuel" du projet dans app/dico.ts.
+Un projet sans capture affiche un aplat floral à la place : rien ne casse.

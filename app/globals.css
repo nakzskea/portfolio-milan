@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+@theme {
+  --color-creme: #faf6ef;
+  --color-ciel: #cddef1;
+  --color-ciel-clair: #e6eff8;
+  --color-encre: #17263d;
+  --color-bleu: #2b4d7e;
+  --color-bleu-doux: #7ea5cf;
+  --color-or: #cf9c3a;
+  --color-trait: #e6ded1;
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-body: var(--font-karla), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-creme);
+  color: var(--color-encre);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-variation-settings: "SOFT" 40, "WONK" 1;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-bleu);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Bandeau aquarelle : le motif floral vit derrière, le texte au-dessus. */
+.bandeau {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--color-ciel) 0%,
+    var(--color-ciel-clair) 70%,
+    var(--color-creme) 100%
+  );
+}
+
+.flore {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Étiquette de techno, façon badge mais posé. */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--color-trait);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.badge::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--color-bleu-doux);
+}
+
+.badge[data-ton="or"]::before {
+  background: var(--color-or);
+}
+
+.badge[data-ton="encre"]::before {
+  background: var(--color-bleu);
+}
+
+/* Carte crème posée sur le fond, ombre très douce type papier. */
+.carte {
+  background: #fffdf9;
+  border: 1px solid var(--color-trait);
+  border-radius: 1.25rem;
+  box-shadow: 0 1px 0 rgba(23, 38, 61, 0.04);
+}
+
+/* Frise du parcours : trait continu + pastilles. */
+.frise {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.frise::before {
+  content: "";
+  position: absolute;
+  left: 0.375rem;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  width: 2px;
+  background: var(--color-ciel);
+}
+
+.etape::before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 0.55rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 999px;
+  background: var(--color-creme);
+  border: 2px solid var(--color-bleu-doux);
+}
+
+.etape[data-actuel]::before {
+  background: var(--color-or);
+  border-color: var(--color-or);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Ligne de compétences : rail continu + arrêts. Verticale en mobile. */
+.ligne {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.ligne::before {
+  content: "";
+  position: absolute;
+  left: 0.4375rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 3px;
+  background: var(--color-bleu);
+  border-radius: 2px;
+}
+
+.arret {
+  position: relative;
+}
+
+.arret::before {
+  content: "";
+  position: absolute;
+  left: -1.75rem;
+  top: 0.35rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  background: var(--color-creme);
+  border: 3px solid var(--color-bleu);
+}
+
+.arret[data-terminus]::before {
+  background: var(--color-or);
+  border-color: var(--color-or);
+}
+
+@media (min-width: 768px) {
+  .ligne {
+    flex-direction: row;
+    gap: 0;
+    padding-left: 0;
+    padding-top: 2.25rem;
+  }
+
+  .ligne::before {
+    left: 0;
+    right: 0;
+    top: 0.4375rem;
+    bottom: auto;
+    width: auto;
+    height: 3px;
+  }
+
+  .arret {
+    flex: 1;
+    padding-right: 1.25rem;
+  }
+
+  .arret::before {
+    left: 0;
+    top: -2.25rem;
+  }
+}
