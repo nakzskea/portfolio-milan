@@ -28,6 +28,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = (await params) as { lang: Langue };
   return {
+    metadataBase: new URL("https://mremy-dev.fr"),
     title: { default: `${MOI.nom} - ${dico[lang].nav.accueil}`, template: `%s - ${MOI.nom}` },
     description: dico[lang].hero.chapo,
   };
