@@ -82,7 +82,7 @@ export default async function Projets({
                       href={p.lien}
                       className="rounded-full bg-bleu px-5 py-2 text-sm text-creme hover:bg-encre"
                     >
-                      {t.labels.voirSite}
+                      {"lienLabel" in p ? p.lienLabel : t.labels.voirSite}
                     </a>
                   </p>
                 )}
