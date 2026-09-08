@@ -10,7 +10,7 @@ export const dico = {
     hero: {
       titre: "Développeur full-stack, du code jusqu'au serveur qui le fait tourner.",
       chapo:
-        "Milan, 22 ans, alternant à la direction des systèmes d'information du réseau LE MET' à Metz. Je conçois des applications métier, je les mets en production, je les maintiens. Et je prends des projets de sites web à côté.",
+        "Milan, 22 ans, alternant à la direction des systèmes d'information du réseau LE MET' à Metz. Je conçois des applications métier, je les mets en production, je les maintiens. Et je réalise des projets de sites web en parallèle.",
       cta: "Me contacter",
       ctaSecondaire: "Voir mes projets",
     },
