@@ -116,13 +116,18 @@ export default async function Accueil({
           <h3 className="mt-16 text-sm font-semibold text-bleu-doux">
             {t.technologiesTitre}
           </h3>
-          <ul className="mt-4 flex flex-wrap gap-2">
-            {t.technologies.map((o) => (
-              <li key={o.nom} className="badge" data-ton={o.ton}>
-                {o.nom}
-              </li>
+                    <div className="mt-6 grid gap-8 sm:grid-cols-2">
+            {t.technologies.map((g) => (
+              <div key={g.famille}>
+                <h4 className="text-sm font-semibold text-bleu">{g.famille}</h4>
+                <ul className="mt-3 flex flex-wrap gap-2">
+                  {g.outils.map((o) => (
+                    <li key={o} className="badge" data-ton={g.ton}>{o}</li>
+                  ))}
+                </ul>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
 
         <section className="mt-24">

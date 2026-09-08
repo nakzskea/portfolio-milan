@@ -8,7 +8,9 @@
   --color-bleu: #2b4d7e;
   --color-bleu-doux: #7ea5cf;
   --color-or: #cf9c3a;
+  --color-sauge: #86a081;
   --color-trait: #e6ded1;
+  
 
   --font-display: var(--font-fraunces), Georgia, serif;
   --font-body: var(--font-karla), ui-sans-serif, system-ui, sans-serif;
@@ -82,13 +84,10 @@ button:focus-visible {
   background: var(--color-bleu-doux);
 }
 
-.badge[data-ton="or"]::before {
-  background: var(--color-or);
-}
-
-.badge[data-ton="encre"]::before {
-  background: var(--color-bleu);
-}
+.badge[data-ton="front"]::before { background: var(--color-bleu); }
+.badge[data-ton="back"]::before { background: var(--color-or); }
+.badge[data-ton="sys"]::before { background: var(--color-bleu-doux); }
+.badge[data-ton="elec"]::before { background: var(--color-sauge); }
 
 /* Carte crème posée sur le fond, ombre très douce type papier. */
 .carte {
