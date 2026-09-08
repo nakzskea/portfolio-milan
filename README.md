@@ -1,4 +1,4 @@
-# Portfolio — Milan Remy
+# Portfolio - Milan Remy
 
 Next.js (App Router) + Tailwind v4. Six pages statiques : `/fr` et `/en` × 3 pages.
 Aucun backend, aucune base, aucune variable d'environnement.

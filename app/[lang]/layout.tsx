@@ -4,6 +4,7 @@ import Link from "next/link";
 import { BasculeLangue } from "../bascule-langue";
 import { dico, LANGUES, type Langue } from "../dico";
 import { MOI } from "../liens";
+import Image from "next/image";
 import "../globals.css";
 
 const fraunces = Fraunces({
@@ -27,7 +28,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = (await params) as { lang: Langue };
   return {
-    title: { default: `${MOI.nom} — ${dico[lang].nav.accueil}`, template: `%s — ${MOI.nom}` },
+    title: { default: `${MOI.nom} - ${dico[lang].nav.accueil}`, template: `%s - ${MOI.nom}` },
     description: dico[lang].hero.chapo,
   };
 }
@@ -52,8 +53,8 @@ export default async function Layout({
       <body>
         <header className="sticky top-0 z-10 border-b border-trait bg-creme/85 backdrop-blur">
           <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-6 py-4">
-            <Link href={`/${lang}`} className="text-lg font-semibold">
-              {MOI.nom}
+            <Link href={`/${lang}`}>
+              <Image src="/logo.png" alt={MOI.nom} width={1656} height={927} priority className="h-11 w-auto" />
             </Link>
             <div className="flex items-center gap-6">
               <nav className="flex gap-5 text-[0.95rem]">
@@ -73,7 +74,7 @@ export default async function Layout({
         <footer className="mt-24 border-t border-trait">
           <div className="mx-auto flex max-w-4xl flex-wrap justify-between gap-4 px-6 py-8 text-sm text-bleu">
             <span>
-              {MOI.nom} — Metz
+              {MOI.nom} Remy - Metz
             </span>
             <span className="flex gap-5">
               <a href={MOI.github} className="hover:underline">
