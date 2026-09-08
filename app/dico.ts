@@ -338,7 +338,7 @@ export const dico = {
           "Publishing a public GitHub backup repository to explain how to use and edit the devices"
         ],
         stack: ["Arduino", "C++", "MicroPython", "JavaScript"],
-        lien: "https://github.com/BeeAthlonBackup",
+        lien: "https://github.com/nakzskea/BeeAthlonBackup",
         lienLabel: "Check the repository",
       },
     ],
