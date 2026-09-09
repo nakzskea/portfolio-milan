@@ -74,7 +74,7 @@ export default async function Layout({
         <footer className="mt-24 border-t border-trait">
           <div className="mx-auto flex max-w-4xl flex-wrap justify-between gap-4 px-6 py-8 text-sm text-bleu">
             <span>
-              {MOI.nom} Remy - Metz
+              {MOI.nom} - Metz
             </span>
             <span className="flex gap-5">
               <a href={MOI.github} className="hover:underline">
