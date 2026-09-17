@@ -151,7 +151,7 @@ export const dico = {
           "Mise en ligne et suivi du site",
         ],
         stack: ["HTML", "CSS", "JavaScript", "PHP"],
-        lien: "https://example.com",
+        lien: "https://dmum-falc.fr",
       },
       {
         nom: "BeeAthlon",
@@ -324,7 +324,7 @@ export const dico = {
           "Deployment and ongoing maintenance of the website",
         ],
         stack: ["HTML", "CSS", "JavaScript", "PHP"],
-        lien: "https://example.com",
+        lien: "https://dmum-falc.fr",
       },
       {
         nom: "BeeAthlon",
