@@ -127,20 +127,6 @@ export const dico = {
         prive: true,
       },
       {
-        nom: "Gestion du parc informatique",
-        visuel: "tools-lemet.png",
-        contexte: "DSI LE MET' · 2025 – 2026",
-        resume:
-          "L'application utilisée par la DSI pour suivre les remises et reprises de matériel auprès des agents, branchée sur l'inventaire existant.",
-        role: [
-          "Formulaires métier et validation côté serveur",
-          "Intégration de l'API de l'outil d'inventaire GLPI et fiabilisation de la connexion",
-          "Déploiement et exploitation en production : conteneur Linux, service géré, journaux",
-        ],
-        stack: ["Next.js", "TypeScript", "MariaDB", "API GLPI"],
-        prive: true,
-      },
-      {
         nom: "Dessine-moi un mouton",
         visuel: "dessine-moi-un-mouton.png",
         contexte: "Projet client · 2026",
@@ -152,6 +138,20 @@ export const dico = {
         ],
         stack: ["HTML", "CSS", "JavaScript", "PHP"],
         lien: "https://dmum-falc.fr",
+      },
+            {
+        nom: "Gestion du parc informatique",
+        visuel: "tools-lemet.png",
+        contexte: "DSI LE MET' · 2026",
+        resume:
+          "L'application utilisée par la DSI pour suivre les remises et reprises de matériel auprès des agents, branchée sur l'inventaire existant.",
+        role: [
+          "Formulaires métier et validation côté serveur",
+          "Intégration de l'API de l'outil d'inventaire GLPI et fiabilisation de la connexion",
+          "Déploiement et exploitation en production : conteneur Linux, service géré, journaux",
+        ],
+        stack: ["Next.js", "TypeScript", "MariaDB", "API GLPI"],
+        prive: true,
       },
       {
         nom: "BeeAthlon",
@@ -300,20 +300,6 @@ export const dico = {
         prive: true,
       },
       {
-        nom: "IT asset management",
-        visuel: "tools-lemet.png",
-        contexte: "LE MET' IT · 2025 – 2026",
-        resume:
-          "The application the IT department uses to track equipment handed to and returned by staff, wired into the existing inventory.",
-        role: [
-          "Business forms and server-side validation",
-          "Integration with the GLPI inventory API and hardening of the connection",
-          "Deployment and production operations: Linux container, managed service, logs",
-        ],
-        stack: ["Next.js", "TypeScript", "MariaDB", "GLPI API"],
-        prive: true,
-      },
-      {
         nom: "Dessine-moi un mouton",
         visuel: "dessine-moi-un-mouton.png",
         contexte: "Client project · 2026",
@@ -325,6 +311,20 @@ export const dico = {
         ],
         stack: ["HTML", "CSS", "JavaScript", "PHP"],
         lien: "https://dmum-falc.fr",
+      },
+      {
+        nom: "IT asset management",
+        visuel: "tools-lemet.png",
+        contexte: "LE MET' IT · 2026",
+        resume:
+          "The application the IT department uses to track equipment handed to and returned by staff, wired into the existing inventory.",
+        role: [
+          "Business forms and server-side validation",
+          "Integration with the GLPI inventory API and hardening of the connection",
+          "Deployment and production operations: Linux container, managed service, logs",
+        ],
+        stack: ["Next.js", "TypeScript", "MariaDB", "GLPI API"],
+        prive: true,
       },
       {
         nom: "BeeAthlon",
