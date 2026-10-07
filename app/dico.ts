@@ -114,7 +114,7 @@ export const dico = {
       {
         nom: "Assistant documentaire RAG interne",
         visuel: "chatbot-rag.png",
-        contexte: "DSI LE MET' · 2026",
+        contexte: "Projet d'entreprise · 2026",
         resume:
           "Un chatbot qui répond aux questions des équipes à partir de la documentation interne, hébergé entièrement sur les serveurs de l'entreprise : aucune donnée ne sort du réseau.",
         role: [
@@ -142,7 +142,7 @@ export const dico = {
             {
         nom: "Gestion du parc informatique",
         visuel: "tools-lemet.png",
-        contexte: "DSI LE MET' · 2026",
+        contexte: "Projet d'entreprise · 2026",
         resume:
           "L'application utilisée par la DSI pour suivre les remises et reprises de matériel auprès des agents, branchée sur l'inventaire existant.",
         role: [
@@ -287,7 +287,7 @@ export const dico = {
       {
         nom: "Internal RAG documentation assistant",
         visuel: "chatbot-rag.png",
-        contexte: "LE MET' IT · 2026",
+        contexte: "Company project · 2026",
         resume:
           "A chatbot answering staff questions from internal documentation, hosted entirely on company servers: no data leaves the network.",
         role: [
@@ -315,7 +315,7 @@ export const dico = {
       {
         nom: "IT asset management",
         visuel: "tools-lemet.png",
-        contexte: "LE MET' IT · 2026",
+        contexte: "Company project · 2026",
         resume:
           "The application the IT department uses to track equipment handed to and returned by staff, wired into the existing inventory.",
         role: [
