@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 export const LANGUES = ["fr", "en"] as const;
 export type Langue = (typeof LANGUES)[number];
 
@@ -23,7 +21,7 @@ export const dico = {
     arrets: [
       {
         titre: "Développement web",
-        texte: "Applications métier de bout en bout, en TypeScript et React notemment.",
+        texte: "Applications métier de bout en bout, en TypeScript et React notamment.",
       },
       {
         titre: "Back-end & données",
@@ -139,7 +137,21 @@ export const dico = {
         stack: ["HTML", "CSS", "JavaScript", "PHP"],
         lien: "https://dmum-falc.fr",
       },
-            {
+      {
+        nom: "Prochains passages métro & tram",
+        visuel: "metro-idf-biv.png",
+        contexte: "Projet personnel · 2026",
+        resume:
+          "Les prochains passages du métro et du tram parisiens en temps réel, affichés comme sur les écrans des quais RATP. On choisit sa ligne et son arrêt, on garde ses stations en favoris.",
+        role: [
+          "Rendu côté serveur des données temps réel de l'API PRIM d'Île-de-France Mobilités",
+          "Lignes, couleurs et arrêts tirés de l'open data IDFM, mis en cache quotidiennement",
+          "Interface mobile façon écrans d'information voyageurs, favoris et application installable",
+        ],
+        stack: ["Next.js", "TypeScript", "React", "API PRIM", "Vercel"],
+        lien: "https://metro-idf-biv.vercel.app/",
+      },
+      {
         nom: "Gestion du parc informatique",
         visuel: "tools-lemet.png",
         contexte: "Projet d'entreprise · 2026",
@@ -276,7 +288,7 @@ export const dico = {
     ],
     projetsTitre: "Projects",
     projetsChapo:
-      "Applications in production used every day by real teams, or personnal projects. The source of company projects is not public, so here is what I did and how.",
+      "Applications in production used every day by real teams, or personal projects. The source of company projects is not public, so here is what I did and how.",
     labels: {
       role: "My part",
       stack: "Technologies",
@@ -311,6 +323,20 @@ export const dico = {
         ],
         stack: ["HTML", "CSS", "JavaScript", "PHP"],
         lien: "https://dmum-falc.fr",
+      },
+      {
+        nom: "Paris metro & tram departures",
+        visuel: "metro-idf-biv.png",
+        contexte: "Personal project · 2026",
+        resume:
+          "Real-time next departures for the Paris metro and tram, displayed like the RATP platform screens. Pick a line and a stop, save your favourite stations.",
+        role: [
+          "Server-side rendering of real-time data from the Île-de-France Mobilités PRIM API",
+          "Lines, colours and stops pulled from IDFM open data, cached daily",
+          "Mobile interface styled after passenger information screens, favourites and installable web app",
+        ],
+        stack: ["Next.js", "TypeScript", "React", "PRIM API", "Vercel"],
+        lien: "https://metro-idf-biv.vercel.app",
       },
       {
         nom: "IT asset management",
